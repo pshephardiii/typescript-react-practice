@@ -1,3 +1,5 @@
+// basic TS notes:
+
 let userName: string = 'Max'
 
 userName = 'John'
@@ -196,3 +198,4 @@ function merge<T, U>(a: T, b: U) {
 
 const newUser = merge<{name: string}, {age: number}>({name: 'Max'}, {age: 34})
 
+// starting the project in CLI: npm create vite@latest react-ts-basics
