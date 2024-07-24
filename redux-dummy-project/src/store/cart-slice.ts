@@ -1,6 +1,6 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 
-type CartItem = {
+export type CartItem = {
     id: string;
     title: string;
     price: number;
@@ -44,3 +44,5 @@ export const cartSlice = createSlice({
         }
     }
 })
+// this is a redux thing
+export const { addToCart, removeFromCart } = cartSlice.actions
